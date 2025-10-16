@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "templatemod",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "TemplateMod",
   "description": "This mod aims to help new BTA modders.",
   "authors": [
     "Turnip Labs"
@@ -19,20 +19,23 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"deus.templatemod.Main"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"deus.templatemod.Main"
 		],
-		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+		"deus": [
+			"deus.templatemod.Main"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"deus.templatemod.entry_points.Sounds"
+		],
+		"initModels": [
+			"deus.templatemod.entry_points.Models"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "templatemod.mixin.json"
   ],
 
   "depends": {

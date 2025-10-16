@@ -128,6 +128,9 @@ dependencies {
     implementation("org.lwjgl:lwjgl-openal:$lwjglVersion")
     implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion")
     implementation("org.lwjgl:lwjgl-stb:$lwjglVersion")
+
+	modImplementation ("org.reflections:reflections:0.10.2")
+
 }
 
 java {
